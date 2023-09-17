@@ -45,35 +45,6 @@ const Home: React.FC = () => {
       get_item('业务元数据采集', 'fbm', <DesktopOutlined />),
       get_item('管理元数据采集', 'fmm', <DesktopOutlined />),
     ]),
-    get_item('清洗数据', '2', <DesktopOutlined />,[
-      get_item('主数据检查', '21', <DesktopOutlined />),
-      get_item('表关系梳理', '22', <DesktopOutlined />),
-    ]),
-    get_item('数据建模', '3', <UserOutlined />, [
-      get_item('主数据建模', '31', <DesktopOutlined />),
-      get_item('指标建模', '32', <DesktopOutlined />),
-      get_item('维度建模', '33', <DesktopOutlined />),
-      get_item('生成数据资产', '34', <DesktopOutlined />),
-    ]),
-    get_item('数据资产', '4', <TeamOutlined />, [
-      get_item('数据资产清单', '41', <DesktopOutlined />),
-      get_item('制定质检规则', '42', <DesktopOutlined />),
-      get_item('出具质检报告', '43', <DesktopOutlined />),
-      get_item('提升数据质量', '44', <DesktopOutlined />),
-    ]),
-    get_item('导出数据', '5', <FileOutlined />,[
-      get_item('导出excel', '51', <DesktopOutlined />),
-      get_item('数据服务化', '52', <DesktopOutlined />),
-    ]),
-    get_item('业数融合', '6', <FileOutlined /> ,[
-      get_item('主题域', '61', <DesktopOutlined />),
-      get_item('接入标准', '62', <DesktopOutlined />),
-      get_item('指标管理', '63', <DesktopOutlined />),
-    ]),
-
-    get_item('系统设置', '7', <FileOutlined /> ,[
-      get_item('数据库连接管理', 'sdcm', <DesktopOutlined />),
-    ]),
   ];
 
   // 点击导航
@@ -84,10 +55,9 @@ const Home: React.FC = () => {
     let _key: string = e.key;
 
     let _router_list: { [key: string]: string } = {
-      "fm" : "/fm",
-      "fmm" : "/fmm",
-      "fbm" : "/fbm",
-      "sdcm" : "/sdcm", //system database connection management
+      "fm" : "/page1",
+      "fmm" : "/page1",
+      "fbm" : "/page1",
     }
 
     setCurrent(_key);
